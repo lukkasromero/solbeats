@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Last-Modified" content="0" />
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <title>Sol Beats</title>
+
+    <meta
+      name="description"
+      content="SOL Beats 👳🏻‍♂️📊 Más ganancias por menos riesgo! You receive 10% daily of your stake Get 150% - 300% in 15/30 days 😌👌 Reinversión 80% Ganancia 30% Referidos 14%"
+    />
+
+    <!--  Essential META Tags -->
+    <meta
+      property="og:title"
+      content="SOL Beats 👳🏻‍♂️📊 Más ganancias por menos riesgo! You receive 10% daily of your stake Get 150% - 300% in 15/30 days 😌👌 Reinversión 80% Ganancia 30% Referidos 14%"
+    />
+    <meta
+      property="og:type"
+      content="SOL Beats 👳🏻‍♂️📊 Más ganancias por menos riesgo! You receive 10% daily of your stake Get 150% - 300% in 15/30 days 😌👌 Reinversión 80% Ganancia 30% Referidos 14%"
+    />
+    <meta
+      property="og:image"
+      content="https://bnbeats.farm/src/image/logo.png"
+    />
+    <meta property="og:url" content="https://bnbeats.farm/src/image/logo.png" />
+    <meta
+      name="twitter:card"
+      content="https://bnbeats.farm/src/image/logo.png"
+    />
+
+    <!--  Non-Essential, But Recommended -->
+    <meta
+      property="og:description"
+      content="SOL Beats 👳🏻‍♂️📊 Más ganancias por menos riesgo! You receive 10% daily of your stake Get 150% - 300% in 15/30 days 😌👌 Reinversión 80% Ganancia 30% Referidos 14%"
+    />
+    <meta property="og:site_name" content="BNBeats V3 ~ Miner of BNB" />
+    <meta name="twitter:image:alt" content="BNBeats V3 ~ Miner of BNB" />
+
+    <link rel="icon" type="image/x-icon" href="src/image/favicon.ico" />
+    <link rel="stylesheet" href="styles/main.css?T=4" />
+    <link rel="stylesheet" href="styles/tailwind.css" />
+  </head>
+
+  <body>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <!-- <a style="bottom: 125px;" href="https://api.whatsapp.com/send?phone=573147213485" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+  </a> -->
+
+    <a href="https://beatswap.online/#/presale">
+      <div class="navbar">
+        <center>
+          <h3
+            style="
+              padding-right: 4 px;
+              display: inline-block;
+              text-align: center;
+              color: white;
+              font-size: 0.8em;
+              letter-spacing: 0.19em;
+            "
+          >
+            PRE SALE
+          </h3>
+          <h3
+            style="
+              display: inline-block;
+              text-align: center;
+              color: white;
+              font-size: 0.8em;
+              letter-spacing: 0.19em;
+            "
+          >
+            Token Beats
+          </h3>
+          <h3
+            style="text-align: center; color: white; font-size: 0.8em"
+            id="demo"
+          ></h3>
+          <button class="bubbly-button">Buy Now</button>
+        </center>
+      </div>
+    </a>
+
+    <br />
+    <br />
+    <br />
+
+    <header class="header-background">
+      <h1 class="title-main nav-tittle">SOL MINER</h1>
+
+      <a
+        href="#"
+        style="width: 80px"
+        onclick="window.open('https://www.sitelock.com/verify.php?site=bnbeatsv3.farm','SiteLock','width=600,height=600,left=160,top=170');"
+        ><img
+          class="img-fluid"
+          alt="SiteLock"
+          title="SiteLock"
+          src="https://shield.sitelock.com/shield/bnbeatsv3.farm"
+      /></a>
+
+      <div id="wallet" class="wallet">
+        <p class="p-whitelist check-whitelist">Whitelist</p>
+
+        <img
+          class="check-whitelist"
+          style="margin-right: 0.2em"
+          src="./src/image/greencheck.png"
+          alt="icon wallet"
+        />
+        <img
+          class="no-whitelist"
+          style="margin-right: 0.2em"
+          src="./src/image/icon_wallet.png"
+          alt="icon wallet"
+        />
+        <span id="walletAddress">Connect wallet</span>
+      </div>
+    </header>
+
+    <!-- video header pijeado -->
+
+    <!-- <div>
+    <iframe width="100%" height="621" src="https://www.youtube.com/embed/02BICPZVwUc"
+      title="LA REALIDAD SOBRE NEWMAN PÉREZ Y EL BNB BEATS" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div> -->
+
+    <div class="container-main">
+      <div class="container-info">
+        <h2 class="title-container text-uppercase">
+          STAKE YOUR SOLANA AND EARN!
+        </h2>
+        <span class="text-container">
+          Solana Reward Pool with the tastiest daily return and lowest dev fee
+        </span>
+        <div class="contentStadium">
+          <div class="item-stadium">
+            YOUR WALLET
+            <span id="walletAvailable" class="text-stadium">0</span>
+          </div>
+          <div class="item-stadium">
+            ROI <span class="text-stadium">up to 10% daily</span>
+          </div>
+          <div class="item-stadium">
+            REFERRER COMMISSION <span class="text-stadium">14%</span>
+          </div>
+          <div class="item-stadium">
+            DEPOSIT FEE <span class="text-stadium">2%</span>
+          </div>
+          <div class="item-stadium">
+            WITHDRAWAL FEE <span class="text-stadium">2%</span>
+          </div>
+          <div class="item-stadium">
+            MARKETING <span class="text-stadium">1%</span>
+          </div>
+        </div>
+        <div class="content">
+          <input
+            class="input input-stake"
+            type="text"
+            name="value"
+            id="value"
+            placeholder="0.00 SOL"
+          />
+        </div>
+
+        <!-- boton comprar -->
+
+        <div id="btn_buy" class="btn_fixed text-uppercase">Get Beats</div>
+      </div>
+
+      <div class="container-info">
+        <h2 class="title-container text-uppercase">Your beats</h2>
+        <!-- <span class="text-container">
+        The BNB Reward Pool with the tastiest daily return and lowest dev fee
+      </span> -->
+        <div class="contentStadium">
+          <div class="item-stadium">
+            CONTRACT <span id="balanceContract" class="text-stadium">0</span>
+          </div>
+          <div class="item-stadium">
+            CONTRACT USDT
+            <span id="balanceContractUSDT" class="text-stadium color-prize"
+              >101447.41</span
+            >
+          </div>
+          <div class="item-stadium">
+            BEATS <span id="beats" class="text-stadium">0</span>
+          </div>
+          <div class="item-stadium">
+            REWARD <span id="reward" class="text-stadium">0</span>
+          </div>
+          <div class="item-stadium">
+            AVAILABLE FOR REINVEST
+            <span id="availableReinvest" class="text-stadium">0</span>
+          </div>
+        </div>
+
+        <div class="contentStadium borderSuper">
+          <div class="item-stadium">
+            AVAILABLE FOR WITHDRAW
+            <span id="availableWithdraw" class="text-stadium">0</span>
+          </div>
+        </div>
+        <div id="btn_refixed" class="btn_fixed">
+          <div id="info_refixed">REINVEST</div>
+          <div id="containerDaysLockedReFixed" class="daysLocked">
+            <span id="timerDaysReFixed"></span>
+          </div>
+        </div>
+        <div id="btn_sell" class="btn_fixed">
+          <div id="info_sell">SELL BEATS</div>
+        </div>
+        <div id="containerDaysLockedSelling" class="daysLocked">
+          <span id="timerDaysSelling"></span>
+        </div>
+      </div>
+
+      <!-- <div class="container-info">
+      <h2 class="title-container text-uppercase">Bnbeats V2</h2>
+      <a href="https://bnbeats.farm/v2" class="btn_fixed text-uppercase">Go to Bnbeats V2</a>
+    </div> -->
+
+      <div class="container-info">
+        <h2 class="title-container text-uppercase">WhiteList</h2>
+        <span class="text-container">
+          This has a much more lucrative winning percentage. If you are added to
+          the whitelist you will be able to automatically withdraw 50% of the
+          SOL your Beats produce
+          <br />
+          You can also report the hash of the payment via WhatsApp and we will
+          give you access to our VIP group, compound interest coaching, Ninja
+          Trader course and a sales closing and neurolinguistic training.
+        </span>
+        <span class="text-container"> </span>
+        <div id="btn_buy_coach" class="btn_fixed">
+          <div id="info_coach" class="text-uppercase">Only 0.15 BNB</div>
+        </div>
+      </div>
+
+      <div class="container-info onlyOwner">
+        <h2 class="title-container text-uppercase">Control panel</h2>
+        <!-- <span class="text-container"> Bnbeats V2 </span> -->
+        <!-- <div class="contentStadium">
+          <div class="item-stadium">
+            YOUR BALANCE
+            <span id="walletAvailable" class="text-stadium">0</span>
+          </div>
+          <div class="item-stadium">
+            ROI <span class="text-stadium">up to 10% daily</span>
+          </div>
+          <div class="item-stadium">
+            REFERRER COMMISSION <span class="text-stadium">13%</span>
+          </div>
+          <div class="item-stadium">
+            DEPOSIT FEE <span class="text-stadium">3%</span>
+          </div>
+          <div class="item-stadium">
+            WITHDRAWAL FEE <span class="text-stadium">3%</span>
+          </div>
+        </div> -->
+
+        <!-- id="btn_sell_old" -->
+        <!-- <a href="https://bnbeats.farm/v2/#sell-beats" target="_blank"><div  class="btn_fixed" style="margin-bottom: 1em">
+          Go to Bnbeats V2
+        </div></a> -->
+
+        <div class="contentStadium borderSuper">
+          <span class="text-container">
+            Add or Remove address of white list
+          </span>
+          <div class="content">
+            <input
+              class="input input-stake"
+              type="text"
+              name="value"
+              id="address_white_list"
+              placeholder="0x000000 address"
+            />
+          </div>
+          <div id="add_white_list" class="btn_fixed">ADD WHITE LIST</div>
+          <div id="remove_white_list" class="btn_fixed">REMOVE WHITE LIST</div>
+        </div>
+      </div>
+
+      <div class="container-info">
+        <h2 class="title-container text-uppercase">General Balance</h2>
+        <div class="item-stadium">
+          BUY BEATS TOTAL <span id="rewardTotal" class="text-stadium">0</span>
+        </div>
+        <div class="item-stadium">
+          SELL BEATS TOTAL
+          <span id="whithdrawTotal" class="text-stadium">0</span>
+        </div>
+
+        <div class="item-stadium">
+          TOTAL EARNINGS <span id="balanceTotal" class="text-stadium">0</span>
+        </div>
+      </div>
+
+      <div class="container-info">
+        <h2 class="title-container text-uppercase">Referral Link</h2>
+        <span class="text-container">
+          Earn 14% of the SOL used to from anyone who uses your referral link
+        </span>
+        <div class="content">
+          <input
+            class="input"
+            type="text"
+            name="referrerLink"
+            id="referrerLink"
+            value=""
+          />
+          <img
+            class="copy-image"
+            id="copy-image"
+            src="./src/image/icon_copy.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+
+        <div class="contentStadium borderSuper" style="margin-top: 2em">
+          <div class="item-stadium">
+            YOUR REFERRER <span id="referrer" class="text-stadium">0</span>
+          </div>
+
+          <div class="item-stadium">
+            SOL EARNED <span id="reffererBNB" class="text-stadium">0</span>
+          </div>
+
+          <div class="item-stadium">
+            YOUR REFERRER SOL
+            <span id="referrerAllBNB" class="text-stadium">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <img class="logo-footer" src="./src/image/logo.png" alt="icon wallet" />
+      <div class="mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8 bg-aliceblue">
+        <div class="flow-root">
+          <div class="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
+            <a
+              href="https://t.me/bnbeatsfarm"
+              target="_blank"
+              class="transform hover:scale-105 mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4"
+              ><img
+                class="h-12"
+                src="./src/image/social/telegram.png"
+                alt="Tuple"
+            /></a>
+            <div
+              class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 transform hover:scale-105"
+            >
+              <a
+                href="https://bscscan.com/address/0xde875e515296423f3872e709d7520df78fd3035b"
+                target="_blank"
+                class=""
+                ><img
+                  class="h-12"
+                  src="./src/image/social/v1.png"
+                  alt="Workcation"
+              /></a>
+            </div>
+            <div
+              class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 transform hover:scale-105"
+            >
+              <a
+                href="https://bscscan.com/address/0x0EB6b3438150BBA686399b0DC82B9E7B3dC94880"
+                target="_blank"
+                class=""
+                ><img
+                  class="h-12"
+                  src="./src/image/social/v2.png"
+                  alt="Workcation"
+              /></a>
+            </div>
+            <div
+              class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 transform hover:scale-105"
+            >
+              <a
+                href="https://bscscan.com/address/0xf43d86D3af365ed5C42fA925Bebd49eF0f56b974"
+                target="_blank"
+                class=""
+                ><img
+                  class="h-12"
+                  src="./src/image/social/v3.png"
+                  alt="Workcation"
+              /></a>
+            </div>
+            <div
+              class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 transform hover:scale-105"
+            >
+              <a href="auditv3.pdf" target="_blank" class=""
+                ><img
+                  class="h-12"
+                  src="./src/image/social/audicrypto.png"
+                  alt="Workcation"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-8 text-white-500 font-bold">© SOLBeats</div>
+    </footer>
+
+    <!-- <a href="https://www.bnbeatscity.net/">
+    <div style="width: 200px; height: 114px;  " id="" class="wallet-movil3">
+
+      <img src="src/image/fotoCity.jpeg">
+
+    </div>
+
+    <a href="https://swap.beatswap.online">
+      <div id="" class="wallet-movil2">
+        <img src="src/image/SWAP1above.png">
+      </div>
+    </a>  -->
+
+    <div id="wallet-movil" class="wallet-movil">
+      <p class="p-whitelist check-whitelist">Whitelist</p>
+
+      <img
+        class="check-whitelist"
+        style="margin-right: 0.2em"
+        src="./src/image/greencheck.png"
+        alt="icon wallet"
+      />
+      <img
+        class="no-whitelist"
+        style="margin-right: 0.2em"
+        src="./src/image/icon_wallet.png"
+        alt="icon wallet"
+      />
+      <span id="walletAddressMovil">Connect wallet</span>
+    </div>
+
+    <!-- <div class="info-wallet">
+      <div>
+        <span id="listeners">0</span> <span class="text-info">Listeners</span>
+      </div>
+      <div>
+        <span>$</span><span id="price">0.00</span>
+        <span class="text-info">por BNB</span>
+      </div>
+    </div> -->
+    <div id="container-alert" class="container-alert">
+      <div class="alert-flex">
+        <div class="alert" id="alert">this is an alert!</div>
+      </div>
+    </div>
+    <div class="loader" id="loader">
+      <div class="center">
+        <img
+          src="./src/image/loader.gif"
+          alt="load"
+          class="center img_loader"
+        />
+        <div>Please wait...</div>
+      </div>
+    </div>
+
+    <div class="pdf_viewer" id="pdf_viewer">
+      <div id="btn_close_viewer_pdf" class="btn_fixed btn_fixed_pdf_viewer">
+        Cerrar
+      </div>
+      <embed id="pdf_container" class="pdf_container" type="application/pdf" />
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.5.4/ethers.umd.min.js"
+      integrity="sha512-xmbPx0riylir51GhTZCFd20yS7NYZNpfDTbEWBjDRzs+UaGb2RyjtASTVtF2ydQWp3xkso9j4sJj39PdSH8/EA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.1/web3.min.js"
+      integrity="sha512-GKw4QT/RccGJIwQxY3MhyiQ5pHrhQ8SuKFEafV+WcpOvtz7iYFQuQGFCvmGlHLctJTe8KrWU1FqvF7VOkEAJtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script src="./scripts/dataContract.js?T=7810"></script>
+    <script src="./scripts/contract.js?T=7803"></script>
+    <script src="./scripts/script.js?T=7811"></script>
+    <script src="./scripts/events.js?T=7801"></script>
+
+    <!--Start of Tawk.to Script-->
+
+    <!-- chat boton  -->
+
+    <!-- <script type="text/javascript">
+      var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/6382d3e7daff0e1306d99dba/1girgng1o';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script> -->
+    <!--End of Tawk.to Script-->
+  </body>
+</html>

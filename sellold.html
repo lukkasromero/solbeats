@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Last-Modified" content="0" />
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <title>BNBeats V2 ~ Miner of BNB</title>
+    <link rel="icon" type="image/x-icon" href="src/image/favicon.ico" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/tailwind.css" />
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="./src/image/logo.svg" alt="logo Bnbeats" />
+      <div id="wallet" class="wallet">
+        <img
+          style="margin-right: 0.2em"
+          src="./src/image/icon_wallet.png"
+          alt="icon wallet"
+        />
+        <span id="walletAddress">Connect wallet</span>
+      </div>
+    </header>
+    <div class="container-main">
+      <h1 class="title-main">BNBeats V2 miner</h1>
+
+      <div class="container-info">
+        <h2 class="title-container">Your beats / OLD CONTRACT</h2>
+        <div id="btn_sell_old" class="btn_fixed">
+          <div>SELL BEATS</div>
+        </div>
+      </div>
+
+      <div class="container-info">
+        <h2 class="title-container">Advertising</h2>
+        <span class="text-container">
+          To know our advertising service, such as plans and rates, write to our
+          telegram support
+        </span>
+        <div id="btn_contact" class="btn_fixed">Contact</div>
+      </div>
+    </div>
+    <footer>
+      <img class="logo-footer" src="./src/image/logo.svg" alt="icon wallet" />
+      <div class="mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8 bg-aliceblue">
+        <div class="flow-root">
+          <div class="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
+            <a
+              href="https://t.me/bnbeatsoficialspanish"
+              target="_blank"
+              class="transform hover:scale-105 mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4"
+              ><img
+                class="h-12"
+                src="./src/image/social/telegram.png"
+                alt="Tuple"
+            /></a>
+            <div
+              class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 transform hover:scale-105"
+            >
+              <a
+                href="https://bscscan.com/address/0x0EB6b3438150BBA686399b0DC82B9E7B3dC94880"
+                target="_blank"
+                class=""
+                ><img
+                  class="h-12"
+                  src="./src/image/social/bscscan.svg"
+                  alt="Workcation"
+              /></a>
+            </div>
+            <div
+              class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 transform hover:scale-105"
+            >
+              <a href="./src/pdf/audit.pdf" target="_blank" class=""
+                ><img
+                  class="h-12"
+                  src="./src/image/social/audicrypto.png"
+                  alt="Workcation"
+              /></a>
+            </div>
+            <div
+              class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 transform hover:scale-105"
+            >
+              <a href="" target="_blank" class=""
+                ><img
+                  class="h-12"
+                  src="./src/image/social/radar.webp"
+                  alt="Workcation"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-8 text-white-500 font-bold">
+        © BNBeatsV2 2022
+      </div>
+    </footer>
+    <div id="wallet-movil" class="wallet-movil">
+      <img
+        style="margin-right: 0.2em"
+        src="./src/image/icon_wallet.png"
+        alt="icon wallet"
+      />
+      <span id="walletAddressMovil">Connect wallet</span>
+    </div>
+    <div class="info-wallet">
+      <div>
+        <span id="listeners">0</span> <span class="text-info">Listeners</span>
+      </div>
+      <div>
+        <span>$</span><span id="price">0.00</span>
+        <span class="text-info">por BNB</span>
+      </div>
+    </div>
+    <div id="container-alert" class="container-alert">
+      <div class="alert-flex">
+        <div class="alert" id="alert">this is an alert!</div>
+      </div>
+    </div>
+    <div class="loader" id="loader">
+      <div class="center">
+        <img
+          src="./src/image/loader.gif"
+          alt="load"
+          class="center img_loader"
+        />
+        <div>Please wait...</div>
+      </div>
+    </div>
+
+    <div class="pdf_viewer" id="pdf_viewer">
+      <div id="btn_close_viewer_pdf" class="btn_fixed btn_fixed_pdf_viewer">
+        Cerrar
+      </div>
+      <embed id="pdf_container" class="pdf_container" type="application/pdf" />
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.5.4/ethers.umd.min.js"
+      integrity="sha512-xmbPx0riylir51GhTZCFd20yS7NYZNpfDTbEWBjDRzs+UaGb2RyjtASTVtF2ydQWp3xkso9j4sJj39PdSH8/EA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.1/web3.min.js"
+      integrity="sha512-GKw4QT/RccGJIwQxY3MhyiQ5pHrhQ8SuKFEafV+WcpOvtz7iYFQuQGFCvmGlHLctJTe8KrWU1FqvF7VOkEAJtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script src="./scripts/dataContract.js?T=2827312"></script>
+    <script src="./scripts/contract.js?T=28091"></script>
+    <script src="./scripts/script.js?T=28092"></script>
+    <script src="./scripts/events.js?T=2809"></script>
+  </body>
+</html>

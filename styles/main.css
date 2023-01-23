@@ -1,0 +1,514 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgba(33, 35, 35, 1);
+  background-blend-mode: lighten;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: aliceblue;
+  font-family: "Radio Canada", sans-serif;
+}
+
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  color: #dd53db;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Righteous", cursive;
+  text-align: center;
+  font-size: 8em;
+  margin: 0;
+}
+
+.title-main {
+  background: #dd53db;
+  background: -moz-linear-gradient(top,
+      rgb(159, 85, 220) 0%,
+      rgb(194, 126, 250) 100%);
+  background: -webkit-linear-gradient(top,
+      rgb(159, 85, 220) 0%,
+      rgb(194, 126, 250) 100%);
+  background: -o-linear-gradient(top,
+     rgb(159, 85, 220) 0%,
+     rgb(194, 126, 250) 100%);
+  background: -ms-linear-gradient(top,
+     rgb(159, 85, 220) 0%,
+     rgb(194, 126, 250) 100%);
+  background: linear-gradient(to bottom,
+      rgb(159, 85, 220) 0%,
+      rgb(194, 126, 250) 100%);
+  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+  color: rgba(194, 126, 250);
+  margin-bottom: 0.5em;
+}
+
+.wallet {
+  display: block;
+  background-color: #dd53db;
+  padding: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.wallet2 {
+  display: block;
+  background-color: #dd53db;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  width: 80px;
+}
+
+
+.wallet-movil {
+  display: none;
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+  background-color: #dd53db;
+  padding: 1em;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  color: #fff;
+  text-align: right;
+}
+
+
+.wallet-movil2 {
+  display: none;
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+  bottom: 8em;
+  background-color: #dd53db;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  padding: 2px;
+  width: 100px;
+  color: #fff;
+  text-align: right;
+}
+
+
+.wallet-movil3 {
+  display: none;
+  position: fixed;
+  left: 1em;
+  bottom: 15em;
+  background-color: #000000;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  padding: 2px;
+  width: 100px;
+  color: #fff;
+  text-align: right;
+}
+
+
+.menu {
+  display: flex;
+  color: #dd53db;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 5em;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 8em;
+}
+
+.logo-footer {
+  width: 20%;
+  margin: 3%;
+}
+
+.container-main {
+  margin-top: 1em;
+  padding: 0 5em;
+}
+
+.info-wallet {
+  background-color: #dd53db;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  padding: 1em;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  text-align: right;
+  color: #fff;
+}
+
+.container-info {
+  /* border: rgba(213,151,50,1) solid 2px; */
+  box-shadow: 0px 0px 4px 2px rgb(172, 50, 213);
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  padding-bottom: 1.5em;
+  margin-bottom: 1%;
+}
+
+.title-container {
+  font-size: 3em;
+  color: #dd53db;
+  text-shadow: 1px 2px #ffffff;
+  margin-bottom: 0.5em;
+}
+
+.text-container {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.copy-image {
+  cursor: pointer;
+}
+
+.content {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.label {
+  margin-right: 1em;
+}
+
+.input {
+  width: 50%;
+  padding: 0.8em;
+  text-align: center;
+  margin-right: 1em;
+  font-size: 1.8em;
+}
+
+.text-info {
+  font-family: "Righteous", cursive;
+}
+
+.btn_fixed {
+  color: #f2f4c8;
+  font-family: "Righteous", cursive;
+  background-color: #dd53db;
+  margin-top: 1em;
+  display: inline-block;
+  border: #e3cb70 3px solid;
+  font-size: 1.5em;
+  padding: 0.8em;
+  max-width: max-content;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn_hide {
+  display: none;
+}
+
+.btn_show {
+  display: inline-block;
+}
+
+.btn_fixed:hover,
+.btn_fixed:focus {
+  color: #fff;
+  border: #fff 3px solid;
+}
+
+.btn_disable {
+  background-color: #ddd;
+  color: #244366;
+  cursor: not-allowed;
+}
+
+.input-stake {
+  margin-right: 0;
+}
+
+.contentStadium {
+  /* font-family: "Handlee", cursive; */
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 1em;
+}
+
+.item-stadium {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+  padding: 0 18em;
+}
+
+.daysLocked {
+  display: none;
+  font-size: 12px;
+  font-weight: 100;
+  font-style: italic;
+  margin-top: 1em;
+}
+
+.loader {
+  position: fixed;
+  inset: 0px;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999999;
+  display: none;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img_loader {
+  width: 100%;
+  top: -200%;
+}
+
+.container-alert {
+  position: fixed;
+  top: 0.9em;
+  right: 1em;
+  width: 100%;
+  display: none;
+}
+
+.alert-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert {
+  color: #fff;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0px 0px 4px 1px #fff;
+}
+
+.alert-success {
+  background: #dd53db;
+}
+
+.alert-error {
+  background: #ef5604;
+}
+
+.borderSuper {
+  border-top: #fff 1px solid;
+}
+
+.item-menu {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.item-menu:hover {
+  background: #dd53db;
+  color: #fff;
+}
+
+.pdf_viewer {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  padding-top: 1em;
+}
+
+.pdf_container {
+  width: 80%;
+  height: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn_fixed_pdf_viewer {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.onlyOwner {
+  display: none;
+}
+
+.wallet-movil2 {
+  display: block;
+}
+
+.wallet-movil3 {
+  display: block;
+}
+
+
+@media only screen and (max-width: 635px) {
+  header {
+    justify-content: center;
+  }
+
+  .title-main {
+    font-size: 2em;
+  }
+
+  .wallet-movil {
+    display: block;
+  }
+
+
+
+  .wallet {
+    display: none;
+  }
+
+  .container-main {
+    padding: 0 0.8em;
+  }
+
+  .input {
+    width: 100%;
+    padding: 0.6em;
+  }
+
+  .container-referrer {
+    display: flex;
+    background: rgba(201, 50, 51, 0.8);
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+  }
+
+  .container-alert {
+    width: unset;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .item-stadium {
+    padding: 0;
+  }
+}
+
+/* boton flotante whatsapp */
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 108px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.float:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color: #fff;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
+.p-whitelist {
+  margin: 0;
+  text-align: center;
+}
+
+.check-whitelist {
+  display: none;
+}
+
+.nav-tittle {
+  font-size: 2rem !important;
+  margin-bottom: 20px !important;
+  margin-top: 20px !important;
+  text-shadow: 1px 2px #ffffff;
+  color: #dd53db;
+}
+
+.header-background {
+  background-color: black;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.color-prize {
+  color: green;
+  text-shadow: 0.3px 0.3px #ffffff;
+}
+
+
+
+
+.navbar {
+  background: linear-gradient(rgb(234, 0, 255), rgb(104, 50, 231));
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+
+
+.bubbly-button {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+}
